@@ -1,0 +1,388 @@
+            /* Horizontal header */
+
+@media screen and (max-width: 768px) {
+    .icon-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+            /* Vertical slidebar */
+
+/* Sidebar active state when opened */
+.sidebar.active {
+    width: 250px; /* Sidebar width when open */
+}
+
+/* Hide header and show sidebar menu icon on mobile */
+@media screen and (max-width: 768px) {
+    .header {
+        display: none; /* Hide the header in mobile view */
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger menu icon */
+    }
+
+    .scroll-container {
+        height: 100vh; /* Make scrollable content take full screen height */
+        padding: 10px;
+        border: none; /* Remove border for mobile view */
+    }
+}
+/* Home section*/
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+    .slideshow-container {
+        height: 80vh; /* Reduce height on mobile */
+    }
+  
+    .text-overlay {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+        top: 2%;
+    }
+  
+    .text-overlay1 {
+        font-size: 0.875rem; /* Adjust description text size */
+        max-width: 80%; /* Reduce width for better readability */
+        top: 7%;
+    }
+  
+    .button {
+        margin-top: 10%; /* Adjust button position on mobile */
+        font-size: 1rem; /* Adjust button font size */
+    }
+  }
+  
+  /* For Tablets (Portrait and Landscape) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .slideshow-container {
+        height: 90vh; /* Slightly reduce height for tablets */
+    }
+  
+    .text-overlay {
+        font-size: 3.5rem; /* Medium font size for tablets */
+        top: 2%;
+    }
+  
+    .text-overlay1 {
+        font-size: 1rem;
+        max-width: 70%; /* Adjust description width */
+        top: 7%;
+    }
+  
+    .button {
+        margin-top: 15%; /* Adjust button placement */
+        font-size: 1.1rem; /* Adjust button font size */
+    }
+  }
+  
+  /* For Desktops and Laptops */
+  @media (min-width: 1025px) {
+    .slideshow-container {
+        height: 100vh;
+    }
+  
+    .text-overlay {
+        font-size: 5rem; /* Larger font for desktops */
+    }
+  
+    .text-overlay1 {
+        font-size: 1rem;
+        max-width: 50%;
+    }
+  
+    .button {
+        margin-top: 25%; 
+        font-size: 1.2rem; 
+    }
+  }
+  
+
+    /* why us section*/
+
+/* Mobile Devices (320px - 767px) */
+@media screen and (max-width: 767px) {
+    .icon-boxes {
+      flex-direction: column;
+      padding: var(--spacing-sm);
+    }
+  
+    .icon-box {
+      width: 100%;
+      margin-top: var(--spacing-xl);
+      height: auto;
+      min-height: 280px;
+    }
+  
+    .why {
+      margin-top: 15%;
+      font-size: 2rem;
+    }
+  
+    .img-box {
+      width: 60px;
+      height: 60px;
+      padding: var(--spacing-xs);
+    }
+  }
+  
+  /* Tablet Devices (768px - 1023px) */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .icon-boxes {
+      padding: var(--spacing-md);
+    }
+  
+    .icon-box {
+      width: calc(50% - var(--spacing-md));
+      margin-top: var(--spacing-xl);
+      height: 320px;
+    }
+  
+    .why {
+      margin-top: 10%;
+    }
+  }
+  
+  /* Laptop Devices (1024px - 1365px) */
+  @media screen and (min-width: 1024px) {
+    .icon-box {
+      width: calc(25% - var(--spacing-md));
+      margin-top: var(--spacing-xl);
+      height: 300px;
+    }
+  }
+  
+  /* Desktop Screens (1366px and above) */
+  @media screen and (min-width: 1366px) {
+    .icon-boxes {
+      padding: var(--spacing-xl);
+      gap: var(--spacing-lg);
+    }
+  
+    .icon-box:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Support for Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .icon-box,
+    .img-box {
+      transition: none;
+    }
+  }
+  
+  /* High Contrast Mode */
+  @media (prefers-contrast: high) {
+    .img-box {
+      border-width: 3px;
+    }
+    
+    p {
+      opacity: 1;
+    }
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-bg-white: #1a1a1a;
+      --color-heading: #ffffff;
+      --color-paragraph: #cccccc;
+      --color-border: #333333;
+    }
+  }
+  
+  /* Touch Device Optimizations */
+  @media (hover: none) {
+    .img-box {
+      transition: none;
+    }
+    
+    .icon-box {
+      transition: none;
+    }
+  }
+  
+/* about section */
+@media screen and (max-width:768px){
+    .image-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-abt2{
+        width: 300px;
+    }
+    .fine-dine h1,p{
+      margin: 8px 0px;
+       
+    }
+    .list li{
+        margin: 8px 0px;
+    }
+    
+}
+
+/* menu section */
+/* Media Queries for Responsiveness */
+
+/* Mobile Phones (up to 600px) */
+@media (max-width: 600px) {
+    .menu-gallery {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+      width: 100%; /* Full width */
+      gap: 10px;
+    }
+  
+    .menu-gallery .align-menu-text {
+      font-size: 0.9rem; /* Smaller font for mobile */
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .main-menu {
+      padding-left: 20px; /* Reduce padding for small screens */
+    }
+  
+    .price {
+      bottom: 30px;
+      left: 10px;
+    }
+  
+    .price span {
+      font-size: 18px; /* Adjust price font size */
+      padding: 8px 8px; /* Smaller padding */
+    }
+  }
+  
+  @media screen and (max-width:768px){
+    .price{
+        width: fit-content;
+    }
+}
+  
+  /* Tablets (601px to 900px) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .menu-gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+      width: 90%; /* Adjust width to fit tablet screen */
+      gap: 15px; /* Adjust gap */
+    }
+  
+    .menu-gallery .align-menu-text {
+      font-size: 1rem; /* Keep text size readable */
+    }
+  
+    .main-menu {
+      padding-left: 50px; /* Reduce padding for tablet */
+    }
+  
+    .price {
+      bottom: 40px;
+      left: 15px;
+    }
+  
+    .price span {
+      font-size: 19px;
+      padding: 9px 9px;
+    }
+  }
+  
+  /* Laptops (901px to 1200px) */
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .menu-gallery {
+      grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
+      width: 70%; /* Adjust width for laptop */
+      gap: 20px; /* Adjust gap */
+    }
+  
+    .main-menu {
+      padding-left: 80px; /* Adjust padding */
+    }
+  
+    .price {
+      bottom: 50px;
+      left: 20px;
+    }
+  
+    .price span {
+      font-size: 20px; /* Keep original size */
+    }
+  }
+  
+  /* Desktops (1201px and above) */
+  @media (min-width: 1201px) {
+    .menu-gallery {
+      grid-template-columns: repeat(2, 1fr); /* Original grid for larger screens */
+      width: 550px; /* Keep the original width */
+    }
+  
+    .main-menu {
+      padding-left: 100px;
+    }
+  
+    .price {
+      bottom: 50px;
+      left: 20px;
+    }
+  
+    .price span {
+      font-size: 20px; /* Original size */
+    }
+  }
+/* chef section */
+
+@media screen and (max-width:768px)
+{
+    .flex-display{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Gallery section */
+@media (min-width: 820px) and (max-width: 1024px){
+    .flex-display{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+/* Contact section */
+@media screen and (max-width:768px){
+    #contact-form input{
+
+        width: 300px;
+
+    }
+    #contact-form textarea{
+
+        max-width: 300px;
+
+    }
+}
+/* footer section */
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        text-align: center; /* Center-align the text */
+        height: fit-content;
+    }
+  
+    .footer-column {
+        margin-bottom: 20px; /* Add space between columns */
+        max-width: 300px;
+    }
+  }
+  
